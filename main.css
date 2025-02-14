@@ -1,0 +1,90 @@
+.main {
+  height: 100vh;
+  display: flex;
+}
+.main > .contents {
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  display: flex;
+  position: relative;
+  background-image: url("https://www.tottenhamhotspur.com/media/uyipgx1o/thfc-son_maddison_16x9.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.main > .contents > .info {
+  max-width: 500px;
+  position: absolute;
+
+  bottom: 80px;
+  left: 80px;
+}
+.main > .contents > .info > h1 {
+  font-weight: 500;
+  color: white;
+  font-size: 100px;
+}
+.main > .contents > .info > .register {
+  display: inline-block;
+  padding: 20px 35px;
+  background-color: #ffe100;
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-right: 12px;
+}
+.main > .contents > .info > .shop {
+  display: inline-block;
+  border: 3px solid #ffe100;
+  padding: 17px 32px;
+  font-size: 18px;
+
+  color: #ffe100;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.main > .contents > .info > .register:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000a3c;
+  transition: all 0.1s;
+}
+.main > .contents > .info > .shop:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000a3c;
+  transition: all 0.1s;
+}
+@media (max-width: 430px) {
+  .main {
+    height: 60vh;
+  }
+  .main > .contents {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-position-y: 100px;
+  }
+  .main > .contents > .info {
+    padding: 10px;
+
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+  }
+  .main > .contents > .info > h1 {
+    font-size: 40px;
+  }
+  .main > .contents > .info > .register {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .main > .contents > .info > .shop {
+    padding: 17px;
+    font-size: 14px;
+  }
+}
